@@ -1,0 +1,40 @@
+# Core Data Science
+numpy==1.26.4
+pandas==2.1.4
+scipy==1.15.3
+
+# Machine Learning
+scikit-learn==1.6.1
+xgboost==3.0.4
+joblib==1.5.1
+
+# Database
+psycopg2-binary==2.9.10
+
+# MLOps
+apache-airflow==2.10.5
+mlflow==3.1.1
+great-expectations==1.5.8
+
+# Monitoring
+evidently==0.7.14
+
+# API Serving
+fastapi==0.116.1
+uvicorn==0.35.0
+pydantic==2.11.7
+python-multipart==0.0.20
+
+# Utilities
+python-dotenv==1.1.1
+requests==2.32.4
+gdown==5.2.0
+
+# Development & Testing
+pytest==8.4.1
+pytest-cov==6.2.1
+httpx==0.28.1
+
+# Build Tools
+setuptools==75.8.0
+wheel==0.45.1
