@@ -10,11 +10,7 @@ from src.database import fetch_data_from_db
 logging.basicConfig(level=logging.INFO, format="%(asctime)s - %(levelname)s - %(message)s", force=True)
 
 def check_for_drift() -> tuple[bool, float]:
-    """
-    Compares historical baseline data (reference) against a new batch of data (current).
-    Uses Evidently AI to generate a drift dashboard and detect dataset drift.
-    Returns (drift_detected, share_drifted_features).
-    """
+    
     try:
         df = fetch_data_from_db("loans")
     except Exception as e:

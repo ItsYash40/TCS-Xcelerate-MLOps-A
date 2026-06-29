@@ -55,7 +55,7 @@ def run_retraining():
     else:
         raise ValueError("Model training failed or returned no Run ID.")
 
-# Define DAG configuration
+# DAG configuration
 default_args = {
     "owner": "airflow",
     "depends_on_past": False,
