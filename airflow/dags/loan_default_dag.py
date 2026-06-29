@@ -7,7 +7,7 @@ from airflow.operators.empty import EmptyOperator
 # Configure logging
 logging.basicConfig(level=logging.INFO)
 
-# Python execution functions wrapping our core modules
+
 def run_ingestion():
     from src.ingestion import ingest_data
     logging.info("Starting data ingestion task...")
