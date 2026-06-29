@@ -82,3 +82,4 @@ def ingest_data(limit_records=50000):
 if __name__ == "__main__":
     # Note: 50,000 records is ample for model training and respects database storage limits.
     ingest_data(limit_records=50000)
+#third part
