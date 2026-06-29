@@ -91,7 +91,7 @@ def check_for_drift() -> tuple[bool, float]:
                 logging.info(f"Dataset Drift Detected: {drift_detected} (Drifted Feature Share: {share_drifted_features:.2%}, Threshold: 35%)")
                 break
         
-        # Special override: if database has not received new rows, force drift to False and 0.0%
+        # Special override: if database has not received new rows, drift to False and 0.0%
         if len(df) <= last_train_db_size:
             drift_detected = False
             share_drifted_features = 0.0

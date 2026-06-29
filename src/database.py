@@ -4,10 +4,10 @@ from psycopg2.extras import execute_values
 from psycopg2.pool import SimpleConnectionPool
 import logging
 from src.config import DB_HOST, DB_PORT, DB_USER, DB_PASSWORD, DB_NAME
-#modified logging configuration to ensure logs are displayed correctly
+
 logging.basicConfig(level=logging.INFO, format="%(asctime)s - %(levelname)s - %(message)s", force=True)
 
-
+# Global database connection pool initialized lazily
 _db_pool = None
 
 def get_pool():
@@ -24,7 +24,7 @@ def get_pool():
                 user=DB_USER,
                 password=DB_PASSWORD,
                 dbname=DB_NAME,
-                connect_timeout=10 
+                connect_timeout=10  # Fail fast instead of hanging indefinitely
             )
             logging.info("Database connection pool initialized successfully.")
         except Exception as e:
@@ -54,7 +54,8 @@ def initialize_database():
     """Creates the necessary tables if they do not exist."""
     conn = get_connection()
     cursor = conn.cursor()
-
+    
+    # We will define a subset of features from Home Credit Default Risk dataset
     create_table_query = """
     CREATE TABLE IF NOT EXISTS loans (
         sk_id_curr INT PRIMARY KEY,
