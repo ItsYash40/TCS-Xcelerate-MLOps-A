@@ -1,4 +1,4 @@
-# 🚀 MLOps Loan Default Prediction Pipeline with Automated Retraining
+#  MLOps Loan Default Prediction Pipeline with Automated Retraining
 
 An end-to-end, production-grade Machine Learning Operations (MLOps) pipeline for predicting credit card loan defaults. The repository integrates continuous data ingestion, automated schema validation, dataset drift monitoring, remote experiment tracking, local fallback caching, and automated conditional retraining loops.
 
@@ -243,7 +243,7 @@ The test suite validates:
   <th style="border: 1px solid #eef2f5; text-align: left; width: 25%; font-weight: bold; color: #111; padding: 15px 22px;">Contribution</th>
 </tr>
 <tr style="border: none;">
-  <td style="border: 1px solid #eef2f5; padding: 15px 22px; font-weight: bold; vertical-align: top;">Debajyoti Bhakta <br><small>*(Team Leader)*</small></td>
+  <td style="border: 1px solid #eef2f5; padding: 15px 22px; font-weight: bold; vertical-align: top;">Debajyoti Bhakta <br><small>(Team Leader)</small></td>
   <td style="border: 1px solid #eef2f5; padding: 15px 22px; color: #555; font-style: italic; vertical-align: top;">Testing & CI/CD</td>
   <td style="border: 1px solid #eef2f5; padding: 15px 22px; font-weight: bold; vertical-align: top;">Abhiranjan Kumar</td>
   <td style="border: 1px solid #eef2f5; padding: 15px 22px; color: #555; font-style: italic; vertical-align: top;">Drift & Retraining Pipeline</td>
