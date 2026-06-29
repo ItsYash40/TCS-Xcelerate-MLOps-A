@@ -228,7 +228,7 @@ The test suite validates:
 
 *   **Program:** TCS Xcelerate
 *   **Domain:** Machine Learning Operations (MLOps)
-*   **Use Case:** Loan Default Prediction Pipeline with Automated Retraining
+*   **Use Case A:** Loan Default Prediction Pipeline with Automated Retraining
 *   **Organization:** Tata Consultancy Services (TCS)
 *   **Institution:** ITER, Siksha 'O' Anusandhan (SOA) University
 *   **Academic Year:** 2026
